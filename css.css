@@ -1,0 +1,196 @@
+/* overall layout */
+.sidebar{grid-area:menu;}
+.topbar{grid-area:header;}
+.main{grid-area:main;}
+.articles{grid-area:right;}
+.footer{grid-area:footer;}
+.webpage{
+    display: grid;
+    grid-template-areas:
+      'menu header header header header header header'
+      'menu main main main main right right'
+      'menu main main main main right right'
+      'menu main main main main right right'
+      'menu main main main main right right'
+      'menu main main main main right right'
+      'menu main main main main right right'
+      'menu main main main main right right '
+      'menu footer footer footer footer footer footer';
+    gap: 5px;
+    background-color: #ffffff;
+}
+body{ /*page color*/
+    background-color: #ffffff;
+}
+a{
+    color: rgb(5, 67, 75);
+}
+.webpage > div{ /*element color*/
+    background-color: rgb(255, 255, 255);
+}
+
+/* Sidebar Element Layout */
+.profile_pic{
+    height: 20%;
+    max-height: 200px;
+    width: height;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    border-radius: 50%;
+}
+
+.sidebar{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5%;
+    border-right: solid medium rgb(73, 112, 99);
+    font-size: medium;
+}
+
+.icon1{grid-area:icon1;}
+.icon2{grid-area:icon2;}
+.icon3{grid-area:icon3;}
+.icon4{grid-area:icon4;}
+.link1{grid-area:link1;}
+.link2{grid-area:link2;}
+.link3{grid-area:link3;}
+.link4{grid-area:link4;}
+.sidebar_icons{
+    display: grid;
+    grid-template-areas: 
+    'icon1 link1 link1 link1'
+    'icon2 link2 link2 link2'
+    'icon3 link3 link3 link3'
+    'icon4 link4 link4 link4';
+}
+.link{
+    text-align: left;
+    margin-top: 40px;
+}
+.icon{
+    height: 30px;
+    width: height;
+    margin-top: 40px;
+}
+
+/* Topbar Element Layout */
+.topbar{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    padding: 1%;
+    position: relative;
+    border-bottom: solid medium rgb(73, 112, 99);
+}
+.topbar > div{
+    margin: 20px;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+}
+
+.searchbar{
+    font-size: 20px;
+    width: 100%;
+}
+.search-icon{
+    background-color: rgb(157, 167, 177);
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+}
+.inbox{
+    background-color: black;
+    color: beige;
+}
+.for-you{
+    background-color: azure;
+    color: grey;
+}
+.following{
+    background-color: azure;
+    color: grey;
+}
+.title > div{
+    padding: 10px;
+    margin-right: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    font-size: 20px;
+}
+
+/* Main Element Layout */
+.rec1{grid-area: article1;}
+.rec2{grid-area: article2;}
+.rec3{grid-area: article3;}
+.rec4{grid-area: article4;}
+.img1{grid-area: img1;}
+.img2{grid-area: img2;}
+.img3{grid-area: img3;}
+.img4{grid-area: img4;}
+.main{
+    display: grid;
+    grid-template-areas:
+      'article1 article1 img1'
+      'article2 article2 img2'
+      'article3 article3 img3'
+      'article4 article4 img4';
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-right: solid medium rgb(73, 112, 99);
+}
+.main > div{ /* main element layout*/
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    /* border-bottom: solid thin lightslategrey; */
+    margin: 2px;
+}
+.main img{
+    height: 150px;
+    width: height;
+    display: block;
+    float: right;
+}
+
+/* Right Articles Element Layout */
+.my-img1{grid-area: my-img1;}
+.my-img2{grid-area: my-img2;}
+.my-img3{grid-area: my-img3;}
+.my-article1{grid-area: my-article1;}
+.my-article2{grid-area: my-article2;}
+.my-article3{grid-area: my-article3;}
+.subtitle{grid-area: subtitle;}
+.articles{
+    display: grid;
+    grid-template-areas: 
+    'subtitle subtitle subtitle'
+    'my-article3 my-article3 my-img3'
+    'my-article2 my-article2 my-img2'
+    'my-article1 my-article1 my-img1';
+    gap: 10px;
+    padding: 10px;
+}
+.art{
+    margin: 10px;
+}
+.articles > div{
+    background-color: white;
+    /* border-bottom: solid thin lightslategrey; */
+}
+
+.articles img{
+    width: 100px;
+    height: width;
+}
